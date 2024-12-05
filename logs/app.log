@@ -1,0 +1,154 @@
+2024-12-05 14:27:03.687 INFO  LoggerUtils - Playwright created
+2024-12-05 14:27:03.704 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 14:27:03.705 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 14:27:03.705 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 14:27:03.705 INFO  LoggerUtils - INFO: chromium launched.
+2024-12-05 14:27:03.995 INFO  LoggerUtils - Browser chromium is connected.
+2024-12-05 14:27:04.021 INFO  LoggerUtils - Context created.
+2024-12-05 14:27:04.232 INFO  LoggerUtils - Page created.
+2024-12-05 14:27:04.233 WARN  LoggerUtils - ✅Start test
+2024-12-05 14:27:04.902 INFO  LoggerUtils - Base url opened
+2024-12-05 14:27:04.976 INFO  LoggerUtils - Page closed.
+2024-12-05 14:27:05.110 INFO  LoggerUtils - Context closed.
+2024-12-05 14:27:05.196 INFO  LoggerUtils - Browser is closed
+2024-12-05 14:27:05.210 INFO  LoggerUtils - Playwright closed.
+2024-12-05 14:30:51.729 INFO  LoggerUtils - Playwright created
+2024-12-05 14:30:51.746 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 14:30:51.746 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 14:30:51.746 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 14:30:51.747 INFO  LoggerUtils - INFO: chromium launched.
+2024-12-05 14:30:52.034 INFO  LoggerUtils - Browser chromium is connected.
+2024-12-05 14:30:52.060 INFO  LoggerUtils - Context created.
+2024-12-05 14:30:52.265 INFO  LoggerUtils - Page created.
+2024-12-05 14:30:52.266 WARN  LoggerUtils - ✅Start test
+2024-12-05 14:30:52.669 INFO  LoggerUtils - Base url opened
+2024-12-05 14:30:52.752 INFO  LoggerUtils - Page closed.
+2024-12-05 14:30:52.802 INFO  LoggerUtils - Context closed.
+2024-12-05 14:30:52.893 INFO  LoggerUtils - Browser is closed
+2024-12-05 14:30:52.902 INFO  LoggerUtils - Playwright closed.
+2024-12-05 14:31:55.644 INFO  LoggerUtils - Playwright created
+2024-12-05 14:31:55.661 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 14:31:55.661 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 14:31:55.662 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 14:31:55.662 INFO  LoggerUtils - INFO: chromium launched.
+2024-12-05 14:31:55.973 INFO  LoggerUtils - Browser chromium is connected.
+2024-12-05 14:31:56.010 INFO  LoggerUtils - Context created.
+2024-12-05 14:31:56.200 INFO  LoggerUtils - Page created.
+2024-12-05 14:31:56.201 WARN  LoggerUtils - ✅Start test
+2024-12-05 14:31:56.663 INFO  LoggerUtils - Base url opened
+2024-12-05 14:31:56.795 INFO  LoggerUtils - Page closed.
+2024-12-05 14:31:56.839 INFO  LoggerUtils - Context closed.
+2024-12-05 14:31:56.939 INFO  LoggerUtils - Browser is closed
+2024-12-05 14:31:56.952 INFO  LoggerUtils - Playwright closed.
+2024-12-05 14:56:46.575 INFO  LoggerUtils - Playwright created
+2024-12-05 14:56:46.592 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 14:56:46.592 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 14:56:46.593 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 14:56:46.593 INFO  LoggerUtils - INFO: chromium launched.
+2024-12-05 14:56:46.885 INFO  LoggerUtils - Browser chromium is connected.
+2024-12-05 14:56:46.913 INFO  LoggerUtils - Context created.
+2024-12-05 14:56:47.078 INFO  LoggerUtils - Page created.
+2024-12-05 14:56:47.078 WARN  LoggerUtils - ✅Start test
+2024-12-05 14:56:47.583 INFO  LoggerUtils - Base url opened
+2024-12-05 14:57:00.292 INFO  LoggerUtils - Page closed.
+2024-12-05 14:57:00.318 INFO  LoggerUtils - Context closed.
+2024-12-05 14:57:00.389 INFO  LoggerUtils - Browser is closed
+2024-12-05 14:57:00.398 INFO  LoggerUtils - Playwright closed.
+2024-12-05 15:09:54.854 INFO  LoggerUtils - Playwright created
+2024-12-05 15:09:54.870 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:09:54.870 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:09:54.870 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:09:54.871 INFO  LoggerUtils - INFO: chromium launched.
+2024-12-05 15:09:55.136 INFO  LoggerUtils - Browser chromium is connected.
+2024-12-05 15:09:55.163 INFO  LoggerUtils - Context created.
+2024-12-05 15:09:55.335 INFO  LoggerUtils - Page created.
+2024-12-05 15:09:55.335 WARN  LoggerUtils - ✅Start test
+2024-12-05 15:09:55.772 INFO  LoggerUtils - Base url opened
+2024-12-05 15:09:55.870 INFO  LoggerUtils - Page closed.
+2024-12-05 15:09:55.917 INFO  LoggerUtils - Context closed.
+2024-12-05 15:09:56.011 INFO  LoggerUtils - Browser is closed
+2024-12-05 15:09:56.021 INFO  LoggerUtils - Playwright closed.
+2024-12-05 15:11:39.424 INFO  LoggerUtils - Playwright created
+2024-12-05 15:11:39.441 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:11:39.441 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:11:39.441 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:11:39.442 INFO  LoggerUtils - INFO: chromium launched.
+2024-12-05 15:11:39.709 INFO  LoggerUtils - Browser chromium is connected.
+2024-12-05 15:11:39.734 INFO  LoggerUtils - Context created.
+2024-12-05 15:11:39.904 INFO  LoggerUtils - Page created.
+2024-12-05 15:11:39.905 WARN  LoggerUtils - ✅Start test
+2024-12-05 15:11:40.304 INFO  LoggerUtils - Base url opened
+2024-12-05 15:11:45.433 INFO  LoggerUtils - Page closed.
+2024-12-05 15:11:45.462 INFO  LoggerUtils - Context closed.
+2024-12-05 15:11:45.536 INFO  LoggerUtils - Browser is closed
+2024-12-05 15:11:45.549 INFO  LoggerUtils - Playwright closed.
+2024-12-05 15:17:21.626 INFO  LoggerUtils - Playwright created
+2024-12-05 15:17:21.642 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:17:21.642 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:17:21.643 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:17:21.643 INFO  LoggerUtils - INFO: chromium launched.
+2024-12-05 15:17:21.921 INFO  LoggerUtils - Browser chromium is connected.
+2024-12-05 15:17:21.946 INFO  LoggerUtils - Context created.
+2024-12-05 15:17:22.109 INFO  LoggerUtils - Page created.
+2024-12-05 15:17:22.110 WARN  LoggerUtils - ✅Start test
+2024-12-05 15:17:22.576 INFO  LoggerUtils - Base url opened
+2024-12-05 15:17:27.690 INFO  LoggerUtils - Page closed.
+2024-12-05 15:17:27.724 INFO  LoggerUtils - Context closed.
+2024-12-05 15:17:27.790 INFO  LoggerUtils - Browser is closed
+2024-12-05 15:17:27.800 INFO  LoggerUtils - Playwright closed.
+2024-12-05 15:22:32.282 INFO  LoggerUtils - Playwright created
+2024-12-05 15:22:32.299 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:22:32.299 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:22:32.299 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:22:32.300 INFO  LoggerUtils - INFO: chromium launched.
+2024-12-05 15:22:32.582 INFO  LoggerUtils - Browser chromium is connected.
+2024-12-05 15:22:32.608 INFO  LoggerUtils - Context created.
+2024-12-05 15:22:32.783 INFO  LoggerUtils - Page created.
+2024-12-05 15:22:32.783 WARN  LoggerUtils - ✅Start test
+2024-12-05 15:22:33.167 INFO  LoggerUtils - Base url opened
+2024-12-05 15:22:33.245 INFO  LoggerUtils - Page closed.
+2024-12-05 15:22:33.283 INFO  LoggerUtils - Context closed.
+2024-12-05 15:22:33.368 INFO  LoggerUtils - Browser is closed
+2024-12-05 15:22:33.385 INFO  LoggerUtils - Playwright closed.
+2024-12-05 15:25:03.281 INFO  LoggerUtils - Playwright created
+2024-12-05 15:25:03.298 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:25:03.298 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:25:03.298 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:25:03.298 INFO  LoggerUtils - INFO: chromium launched.
+2024-12-05 15:25:03.576 INFO  LoggerUtils - Browser chromium is connected.
+2024-12-05 15:25:03.602 INFO  LoggerUtils - Context created.
+2024-12-05 15:25:03.757 INFO  LoggerUtils - Page created.
+2024-12-05 15:25:03.757 WARN  LoggerUtils - ✅Start test
+2024-12-05 15:25:04.132 INFO  LoggerUtils - Base url opened
+2024-12-05 15:25:04.220 INFO  LoggerUtils - Page closed.
+2024-12-05 15:25:04.271 INFO  LoggerUtils - Context closed.
+2024-12-05 15:25:04.363 INFO  LoggerUtils - Browser is closed
+2024-12-05 15:25:04.379 INFO  LoggerUtils - Playwright closed.
+2024-12-05 15:42:48.481 INFO  LoggerUtils - Playwright created
+2024-12-05 15:42:48.498 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:42:48.498 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:42:48.498 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:42:48.499 INFO  LoggerUtils - INFO: chromium launched.
+2024-12-05 15:42:48.786 INFO  LoggerUtils - Browser chromium is connected.
+2024-12-05 15:42:48.828 INFO  LoggerUtils - Context created.
+2024-12-05 15:42:48.996 INFO  LoggerUtils - Page created.
+2024-12-05 15:42:48.996 WARN  LoggerUtils - ✅Start test
+2024-12-05 15:42:49.390 INFO  LoggerUtils - Base url opened
+2024-12-05 15:42:49.534 INFO  LoggerUtils - Page closed.
+2024-12-05 15:42:49.573 INFO  LoggerUtils - Context closed.
+2024-12-05 15:42:49.658 INFO  LoggerUtils - Browser is closed
+2024-12-05 15:42:49.668 INFO  LoggerUtils - Playwright closed.
+2024-12-05 15:49:49.201 INFO  LoggerUtils - Playwright created
+2024-12-05 15:49:49.218 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:49:49.218 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:49:49.218 INFO  LoggerUtils - properties = {browserName1=chromium, isHeadLess3=false, browserName2=firefox, slowMo2=1500, slowMo1=10, slowMo3=1500, isHeadLess1=false, browserName3=webkit, isHeadLess2=false}
+2024-12-05 15:49:49.219 INFO  LoggerUtils - INFO: chromium launched.
+2024-12-05 15:49:49.497 INFO  LoggerUtils - Browser chromium is connected.
+2024-12-05 15:49:49.526 INFO  LoggerUtils - Context created.
+2024-12-05 15:49:49.692 INFO  LoggerUtils - Page created.
+2024-12-05 15:49:49.694 WARN  LoggerUtils - ✅Start test
+2024-12-05 15:49:50.493 INFO  LoggerUtils - Base url opened
+2024-12-05 15:49:50.541 INFO  LoggerUtils - Page closed.
+2024-12-05 15:49:50.575 INFO  LoggerUtils - Context closed.
+2024-12-05 15:49:50.659 INFO  LoggerUtils - Browser is closed
+2024-12-05 15:49:50.668 INFO  LoggerUtils - Playwright closed.
