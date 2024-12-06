@@ -1,7 +1,6 @@
 package node_express_api;
 
 import com.microsoft.playwright.ElementHandle;
-import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import node_express_api.runner.BaseTest;
@@ -13,6 +12,7 @@ import java.util.List;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 import static node_express_api.utils.TestData.*;
+import static node_express_api.utils.UserData.*;
 
 public class FunctionalTest extends BaseTest {
 
@@ -20,9 +20,9 @@ public class FunctionalTest extends BaseTest {
     public void testAddUser() {
         getPage().getByRole(AriaRole.LINK,
                 new Page.GetByRoleOptions().setName(ADD_MENU).setExact(true)).click();
-        getPage().getByLabel(LABEL_FIRST_NAME).fill(FIRST_NAME);
-        getPage().getByLabel(LABEL_LAST_NAME).fill(LAST_NAME);
-        getPage().getByLabel(LABEL_AGE).fill(AGE);
+        getPage().getByLabel(LABEL_FIRST_NAME).fill(User1.firstName);
+        getPage().getByLabel(LABEL_LAST_NAME).fill(User1.lastName);
+        getPage().getByLabel(LABEL_AGE).fill(User1.age);
         getPage().getByRole(AriaRole.BUTTON,
                 new Page.GetByRoleOptions().setName(BUTTON_ADD).setExact(true)).click();
 
@@ -49,9 +49,9 @@ public class FunctionalTest extends BaseTest {
         String actualAge = userData.get(2);
         String actualId = userData.get(3);
 
-        assert(actualFirstName.equals(FIRST_NAME));
-        assert(actualLastName.equals(LAST_NAME));
-        assert(actualAge.equals(AGE));
+        assert(actualFirstName.equals(User1.firstName));
+        assert(actualLastName.equals(User1.lastName));
+        assert(actualAge.equals(User1.age));
         assert(actualId.length() == 36);
 
         // Чистим за собой - удаляем всех users
