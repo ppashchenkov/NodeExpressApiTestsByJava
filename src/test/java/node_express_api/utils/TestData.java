@@ -8,6 +8,10 @@ public class TestData {
     public static final String SEARCH_TITLE = "Search user";
     public static final String EDIT_TITLE = "Edit user";
     public static final String DELETE_TITLE = "Delete user";
+    public static final String H2_ADD_TITLE = "Add User";
+    public static final String H2_SEARCH_TITLE = "Search user";
+    public static final String H2_EDIT_TITLE = "Edit user";
+    public static final String H2_DELETE_TITLE = "Delete user";
     public static final String ADD_MENU = "Add";
     public static final String SEARCH_MENU = "Search";
     public static final String EDIT_MENU = "Edit";
