@@ -34,12 +34,7 @@ public class FunctionalTest extends BaseTest {
 
         assert(!listTr.isEmpty());
 
-        String actualFirstName = "";
-        String actualLastName = "";
-        String actualAge = "";
-        String actualId = "";
         List<String> userData = new ArrayList<>();
-
         for (int i = 0; i < listTr.size();) {
             for (int j = 0; j < 4; j++) {
                 ElementHandle el = listTr.get(i);
@@ -49,7 +44,15 @@ public class FunctionalTest extends BaseTest {
                 System.out.println(userData.get(j));
             }
         }
+        String actualFirstName = userData.get(0);
+        String actualLastName = userData.get(1);
+        String actualAge = userData.get(2);
+        String actualId = userData.get(3);
 
+        assert(actualFirstName.equals(FIRST_NAME));
+        assert(actualLastName.equals(LAST_NAME));
+        assert(actualAge.equals(AGE));
+        assert(actualId.length() == 36);
 
         // Чистим за собой - удаляем всех users
         getPage().getByRole(AriaRole.LINK,
@@ -65,7 +68,7 @@ public class FunctionalTest extends BaseTest {
         }
         getPage().reload();
         listTr = getPage().querySelectorAll("td");
-        LoggerUtils.logInfo("LIST TR +++++++++++++++++++++++++++++++++++++");
+        LoggerUtils.logInfo("LIST TR #####################################");
         LoggerUtils.logInfo(listTr.toString());
         System.out.println(listTr.size());
 
