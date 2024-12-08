@@ -29,11 +29,31 @@ public class TestData {
     public static final String LABEL_AGE = "Age";
     public static final String LABEL_USER_ID = "User ID";
 
-    public static final String FIRST_NAME = "John";
-    public static final String LAST_NAME = "Donahue";
-    public static final String AGE = "37";
+//    public static final String FIRST_NAME = "John";
+//    public static final String LAST_NAME = "Donahue";
+//    public static final String AGE = "37";
 
     public static final String BUTTON_ADD = "Add";
     public static final String BUTTON_DELETE = "Delete";
 
+    public static User user1 = new User(
+            "John",
+            "Doe",
+            "46",
+            "");
+    public static User user2 = new User(
+            "Jane",
+            "Doe",
+            "35",
+            "");
+    public static User user3 = new User(
+            "Johnny",
+            "Doe",
+            "10",
+            "");
+    public static User user4 = new User(
+            "Jane",
+            "Unique",
+            "46",
+            "");
 }
