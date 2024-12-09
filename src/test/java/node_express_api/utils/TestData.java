@@ -29,10 +29,6 @@ public class TestData {
     public static final String LABEL_AGE = "Age";
     public static final String LABEL_USER_ID = "User ID";
 
-//    public static final String FIRST_NAME = "John";
-//    public static final String LAST_NAME = "Donahue";
-//    public static final String AGE = "37";
-
     public static final String BUTTON_ADD = "Add";
     public static final String BUTTON_DELETE = "Delete";
 
