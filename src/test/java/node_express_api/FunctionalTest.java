@@ -48,16 +48,16 @@ public class FunctionalTest extends BaseTest {
         assert(user1.getId().length() == 36);
 
 //  чистим за собой
-        getPage().getByRole(AriaRole.LINK,
-                new Page.GetByRoleOptions().setName(DELETE_MENU).setExact(true)).click();
-
-        getPage().getByLabel(LABEL_USER_ID).fill(user1.getId());
-        getPage().getByRole(AriaRole.BUTTON,
-                new Page.GetByRoleOptions().setName(BUTTON_DELETE).setExact(true)).click();
-        getPage().reload();
-        List<ElementHandle> listTr = getPage().querySelectorAll("tr");
-
-        assert(listTr.size() == 1);
+//        getPage().getByRole(AriaRole.LINK,
+//                new Page.GetByRoleOptions().setName(DELETE_MENU).setExact(true)).click();
+//
+//        getPage().getByLabel(LABEL_USER_ID).fill(user1.getId());
+//        getPage().getByRole(AriaRole.BUTTON,
+//                new Page.GetByRoleOptions().setName(BUTTON_DELETE).setExact(true)).click();
+//        getPage().reload();
+//        List<ElementHandle> listTr = getPage().querySelectorAll("tr");
+//
+//        assert(listTr.size() == 1);
     }
 
     @Test

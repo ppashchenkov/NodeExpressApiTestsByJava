@@ -7,6 +7,7 @@ public class TestData {
     public static final String SEARCH_END_POINT = "search";
     public static final String EDIT_END_POINT = "edit";
     public static final String DELETE_END_POINT = "delete";
+    public static final String USERS_END_POINT = "/users/";
 
     public static final String ADD_TITLE = "Users app";
     public static final String SEARCH_TITLE = "Search user";

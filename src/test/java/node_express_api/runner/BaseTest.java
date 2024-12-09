@@ -11,6 +11,8 @@ import org.testng.annotations.*;
 
 import static node_express_api.utils.TestData.BASE_URL;
 import static node_express_api.utils.TestData.HOME_END_POINT;
+import static node_express_api.utils.TestData.USERS_END_POINT;
+import static org.testng.Assert.assertTrue;
 
 public abstract class BaseTest {
 
@@ -18,6 +20,7 @@ public abstract class BaseTest {
     private Browser browser;
     private BrowserContext context;
     private Page page;
+    private APIRequestContext request;
 
     @BeforeSuite
     protected void checkIfPlaywrightCreatedAndBrowserLaunched() {
@@ -39,6 +42,7 @@ public abstract class BaseTest {
             LoggerUtils.logFatal("FATAL: Browser is NOT connected.");
             System.exit(1); // выходим из системы с кодом ошибки 1
         }
+        request = playwright.request().newContext(new APIRequest.NewContextOptions());
     }
 
     @BeforeMethod
@@ -56,6 +60,11 @@ public abstract class BaseTest {
         } else {
             LoggerUtils.logError("ERROR: Base url was NOT opened.");
         }
+        APIResponse issues = request.delete(BASE_URL + USERS_END_POINT);
+
+        assertTrue(issues.ok());
+        LoggerUtils.logInfo("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        LoggerUtils.logInfo(issues.toString());
     }
 
     @AfterMethod
@@ -77,6 +86,10 @@ public abstract class BaseTest {
             if(!browser.isConnected()) {
                 LoggerUtils.logInfo("Browser is closed");
             }
+        }
+        if (request != null) {
+            request.dispose();
+            request = null;
         }
     }
 
