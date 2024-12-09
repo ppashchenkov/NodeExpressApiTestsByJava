@@ -36,16 +36,16 @@ public class FunctionalTest extends BaseTest {
         getPage().getByLabel(LABEL_AGE).fill(user1.getAge());
         getPage().getByRole(AriaRole.BUTTON,
                 new Page.GetByRoleOptions().setName(BUTTON_ADD).setExact(true)).click();
+        String actualFirstName = getPage().locator( "tbody>tr>td").first().innerText();
+        String actualLastName = getPage().locator( "tbody>tr>td").nth(1).innerText();
+        String actualAge = getPage().locator( "tbody>tr>td").nth(2).innerText();
         String id = getPage().locator( "tbody>tr>td").nth(3).innerText();
-        LoggerUtils.logInfo("LIST TR #####################################");
-        LoggerUtils.logInfo(id);
         user1.setId(id);
 
-
-        List<ElementHandle> listTr = new ArrayList<>();
-        listTr = getPage().querySelectorAll("tr");
-
-        assert(!listTr.isEmpty());
+        assert(actualFirstName.equals(user1.getFirstName()));
+        assert(actualLastName.equals(user1.getLastName()));
+        assert(actualAge.equals(user1.getAge()));
+        assert(user1.getId().length() == 36);
 
 //  чистим за собой
         getPage().getByRole(AriaRole.LINK,
@@ -55,7 +55,7 @@ public class FunctionalTest extends BaseTest {
         getPage().getByRole(AriaRole.BUTTON,
                 new Page.GetByRoleOptions().setName(BUTTON_DELETE).setExact(true)).click();
         getPage().reload();
-        listTr = getPage().querySelectorAll("tr");
+        List<ElementHandle> listTr = getPage().querySelectorAll("tr");
 
         assert(listTr.size() == 1);
     }
@@ -78,7 +78,14 @@ public class FunctionalTest extends BaseTest {
             user.setId(id);
         }
 
+
+
+
 // Здесь будет основной тест
+
+
+
+
 
         assert(true);
 
