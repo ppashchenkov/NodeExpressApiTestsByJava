@@ -2,17 +2,18 @@ package node_express_api.runner;
 
 import com.microsoft.playwright.*;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 
+import com.microsoft.playwright.options.AriaRole;
 import node_express_api.utils.LoggerUtils;
 import node_express_api.utils.BrowserManager;
 import node_express_api.utils.ConfigProperties;
+import node_express_api.utils.User;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
-import static node_express_api.utils.TestData.BASE_URL;
-import static node_express_api.utils.TestData.HOME_END_POINT;
-import static node_express_api.utils.TestData.USERS_END_POINT;
-import static org.testng.Assert.assertTrue;
+import static node_express_api.utils.TestData.*;
 
 public abstract class BaseTest {
 
@@ -20,7 +21,7 @@ public abstract class BaseTest {
     private Browser browser;
     private BrowserContext context;
     private Page page;
-    private APIRequestContext request;
+    private APIRequestContext apiRequestContext;
 
     @BeforeSuite
     protected void checkIfPlaywrightCreatedAndBrowserLaunched() {
@@ -42,7 +43,8 @@ public abstract class BaseTest {
             LoggerUtils.logFatal("FATAL: Browser is NOT connected.");
             System.exit(1); // выходим из системы с кодом ошибки 1
         }
-        request = playwright.request().newContext(new APIRequest.NewContextOptions());
+        apiRequestContext = playwright.request().newContext(new APIRequest.NewContextOptions()
+                .setBaseURL(API_USERS_URL));
     }
 
     @BeforeMethod
@@ -60,11 +62,10 @@ public abstract class BaseTest {
         } else {
             LoggerUtils.logError("ERROR: Base url was NOT opened.");
         }
-        APIResponse issues = request.delete(BASE_URL + USERS_END_POINT);
+        APIResponse response = apiRequestContext.delete("");
+        int responseCode = response.status();
 
-        assertTrue(issues.ok());
-        LoggerUtils.logInfo("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        LoggerUtils.logInfo(issues.toString());
+        Assert.assertEquals(responseCode, 200);
     }
 
     @AfterMethod
@@ -87,14 +88,13 @@ public abstract class BaseTest {
                 LoggerUtils.logInfo("Browser is closed");
             }
         }
-        if (request != null) {
-            request.dispose();
-            request = null;
-        }
     }
 
     @AfterSuite
     protected void closeBrowserAndPlaywright() {
+        if (apiRequestContext != null) {
+            apiRequestContext.dispose();
+        }
         if (playwright != null) {
             playwright.close();
             LoggerUtils.logInfo("Playwright closed.");
@@ -113,5 +113,22 @@ public abstract class BaseTest {
 
     protected boolean getIsOnHomePage() {
         return isOnHomePage();
+    }
+
+    public void addUsers(ArrayList<User> users) {
+        getPage().getByRole(AriaRole.LINK,
+                new Page.GetByRoleOptions().setName(ADD_MENU).setExact(true)).click();
+        String id = "";
+        for (User user : users) {
+            getPage().getByLabel(LABEL_FIRST_NAME).fill(user.getFirstName());
+            getPage().getByLabel(LABEL_LAST_NAME).fill(user.getLastName());
+            getPage().getByLabel(LABEL_AGE).fill(user.getAge());
+            getPage().getByRole(AriaRole.BUTTON,
+                    new Page.GetByRoleOptions().setName(BUTTON_ADD).setExact(true)).click();
+            id = getPage().locator("tbody>tr")
+                    .last().locator("td")
+                    .nth(3).innerText();
+            user.setId(id);
+        }
     }
 }

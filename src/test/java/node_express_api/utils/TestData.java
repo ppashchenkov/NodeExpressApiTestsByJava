@@ -2,6 +2,7 @@ package node_express_api.utils;
 
 public class TestData {
     public static final String BASE_URL = "http://localhost:5000";
+    public static final String API_USERS_URL = "http://localhost:5000/api/users";
     public static final String HOME_END_POINT = "/";
     public static final String ADD_END_POINT = "add";
     public static final String SEARCH_END_POINT = "search";

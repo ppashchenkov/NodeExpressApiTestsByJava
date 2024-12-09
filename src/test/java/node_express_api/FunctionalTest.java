@@ -4,8 +4,8 @@ import com.microsoft.playwright.ElementHandle;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import node_express_api.runner.BaseTest;
-import node_express_api.utils.LoggerUtils;
 import node_express_api.utils.User;
+import node_express_api.utils.Utils;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -46,37 +46,31 @@ public class FunctionalTest extends BaseTest {
         assert(actualLastName.equals(user1.getLastName()));
         assert(actualAge.equals(user1.getAge()));
         assert(user1.getId().length() == 36);
+    }
 
-//  чистим за собой
-//        getPage().getByRole(AriaRole.LINK,
-//                new Page.GetByRoleOptions().setName(DELETE_MENU).setExact(true)).click();
-//
-//        getPage().getByLabel(LABEL_USER_ID).fill(user1.getId());
-//        getPage().getByRole(AriaRole.BUTTON,
-//                new Page.GetByRoleOptions().setName(BUTTON_DELETE).setExact(true)).click();
-//        getPage().reload();
-//        List<ElementHandle> listTr = getPage().querySelectorAll("tr");
-//
-//        assert(listTr.size() == 1);
+    @Test
+    public void testDeleteUser() {
+        ArrayList<User> users = new ArrayList<>(Arrays.asList(user3));
+        addUsers(users);
+
+        List<ElementHandle> listTr = getPage().querySelectorAll("tr");
+
+        assert(listTr.size() == 2);
+
+        getPage().getByRole(AriaRole.LINK,
+                new Page.GetByRoleOptions().setName(DELETE_MENU).setExact(true)).click();
+        getPage().getByLabel(LABEL_USER_ID).fill(user3.getId());
+        getPage().getByRole(AriaRole.BUTTON,
+                new Page.GetByRoleOptions().setName(BUTTON_DELETE).setExact(true)).click();
+        listTr = getPage().querySelectorAll("tr");
+
+        assert(listTr.size() == 1);
     }
 
     @Test
     public void testSearchUsers() {
         ArrayList<User> users = new ArrayList<>(Arrays.asList(user1, user2, user3, user4));
-        getPage().getByRole(AriaRole.LINK,
-                new Page.GetByRoleOptions().setName(ADD_MENU).setExact(true)).click();
-        String id = "";
-        for (User user : users) {
-            getPage().getByLabel(LABEL_FIRST_NAME).fill(user.getFirstName());
-            getPage().getByLabel(LABEL_LAST_NAME).fill(user.getLastName());
-            getPage().getByLabel(LABEL_AGE).fill(user.getAge());
-            getPage().getByRole(AriaRole.BUTTON,
-                    new Page.GetByRoleOptions().setName(BUTTON_ADD).setExact(true)).click();
-            id = getPage().locator( "tbody>tr")
-                    .last().locator("td")
-                    .nth(3).innerText();
-            user.setId(id);
-        }
+        addUsers(users);
 
 
 

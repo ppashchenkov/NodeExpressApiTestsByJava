@@ -1,15 +1,21 @@
 package node_express_api.utils;
 
-import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
+import node_express_api.runner.BaseTest;
+import node_express_api.utils.User;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import static node_express_api.utils.TestData.*;
 import node_express_api.runner.BaseTest;
 
 public class Utils extends BaseTest {
 
-
-
-
+}
 
 //    private static Page getPage() {
 //        Browser browser = getPlaywright().chromium().launch(new BrowserType.LaunchOptions()
@@ -70,5 +76,3 @@ public class Utils extends BaseTest {
 //    private static Locator getImage(String text) {
 //        return page.getByRole(AriaRole.IMG, new Page.GetByRoleOptions().setName(text));
 //    }
-}
-
