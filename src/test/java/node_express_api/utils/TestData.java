@@ -32,6 +32,8 @@ public class TestData {
     public static final String LABEL_USER_ID = "User ID";
 
     public static final String BUTTON_ADD = "Add";
+    public static final String BUTTON_SEARCH = "Search";
+    public static final String BUTTON_EDIT = "Edit";
     public static final String BUTTON_DELETE = "Delete";
 
     public static User user1 = new User(
