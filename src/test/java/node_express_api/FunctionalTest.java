@@ -5,6 +5,7 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import node_express_api.runner.BaseTest;
+import node_express_api.utils.LoggerUtils;
 import node_express_api.utils.User;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -76,6 +77,7 @@ public class FunctionalTest extends BaseTest {
 
     @Test(dataProvider = "searchUsers")
     public void testSearchUsers(String tcName, String[] searchCriteria, int expectedCount, User[] expectedUsers) {
+        LoggerUtils.logSuccess("TestCase: " + tcName);
         ArrayList<User> users = new ArrayList<>(Arrays.asList(user1, user2, user3, user4));
         addUsers(users);
 

@@ -55,13 +55,13 @@ public abstract class BaseTest {
         page = context.newPage();
         LoggerUtils.logInfo("Page created.");
 
-        LoggerUtils.logSuccess("Start test");
         getPage().navigate(BASE_URL);
         if (isOnHomePage()) {
             LoggerUtils.logInfo("Base url opened");
         } else {
             LoggerUtils.logError("ERROR: Base url was NOT opened.");
         }
+        LoggerUtils.logSuccess("Start test");
         APIResponse response = apiRequestContext.delete("");
         int responseCode = response.status();
 
